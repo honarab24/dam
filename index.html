@@ -6,44 +6,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Page Title -->
-  <title>My Pretentious Love</title>
+  <title>My Pretentious Love - Full Episodes HD</title>
 
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Watch My Pretentious Love full episodes online in HD with smooth streaming.">
-  <meta name="keywords" content="My Pretentious Love, drama, full episodes, movies, TV series, HD streaming">
+  <meta name="description" content="Watch My Pretentious Love full episodes online in HD with smooth streaming and minimal buffering.">
+  <meta name="keywords" content="My Pretentious Love, drama, full episodes, HD streaming, TV series, movies">
+  <meta name="author" content="My Pretentious Love">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="My Pretentious Love - Full Episodes HD">
+  <meta property="og:description" content="Stream all episodes of My Pretentious Love in HD quality, watch drama series online.">
+  <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1UhPG1TReum6ieg5QrVBdGhzsBhembOyZBA&s">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://your-domain.com/">
 
   <!-- Monetag Verification -->
   <meta name="monetag" content="2a5f51be42dd376efc0e49b81fb55f5f">
 
   <!-- Favicon -->
   <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1UhPG1TReum6ieg5QrVBdGhzsBhembOyZBA&s" type="image/png">
-  
-  <!-- Preconnect for Faster Loading -->
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
-  <link rel="preconnect" href="https://groleegni.net">
+
+  <!-- Preconnect & DNS Prefetch (Performance) -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://groleegni.net" crossorigin>
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
   <link rel="dns-prefetch" href="https://groleegni.net">
 
-  <!-- Styles are injected via script.js -->
+  <!-- Critical CSS (optional small styles for body before script.js injects full styles) -->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: #fff;
+      text-align: center;
+    }
+    #app {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
 </head>
 <body>
   
-  <!-- Root container (script.js will generate content here) -->
-  <div id="app"></div>
+  <!-- Root container (script.js will build content here) -->
+  <div id="app">Loading My Pretentious Love...</div>
 
   <!-- Main Script -->
   <script src="script.js" defer></script>
   
-  <!-- Ads fallback (loads once at startup) -->
+  <!-- Ads fallback (loads once at startup for guaranteed display) -->
   <script data-cfasync="false" type="text/javascript">
     (function(){
       var s = document.createElement("script");
       s.dataset.zone = "9791642";
       s.src = "https://groleegni.net/vignette.min.js";
       s.async = true;
+      s.referrerPolicy = "no-referrer-when-downgrade"; // safer ad loading
       document.body.appendChild(s);
     })();
   </script>
+
+  <!-- No-JS Fallback -->
+  <noscript>
+    <p>Please enable JavaScript to watch My Pretentious Love episodes.</p>
+  </noscript>
 
 </body>
 </html>
