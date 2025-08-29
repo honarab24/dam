@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="monetag" content="2a5f51be42dd376efc0e49b81fb55f5f">
-  <meta charset="UTF-8" />
+  <!-- Charset & Viewport -->
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page Title -->
   <title>My Pretentious Love</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Watch My Pretentious Love full episodes online in HD with smooth streaming.">
+  <meta name="keywords" content="My Pretentious Love, drama, full episodes, movies, TV series, HD streaming">
+
+  <!-- Monetag Verification -->
+  <meta name="monetag" content="2a5f51be42dd376efc0e49b81fb55f5f">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1UhPG1TReum6ieg5QrVBdGhzsBhembOyZBA&s" type="image/png">
+  
+  <!-- Preconnect for Faster Loading -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://groleegni.net">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://groleegni.net">
+
+  <!-- Styles are injected via script.js -->
 </head>
 <body>
   
-  <script src="script.js"></script>
+  <!-- Root container (script.js will generate content here) -->
+  <div id="app"></div>
 
-
+  <!-- Main Script -->
+  <script src="script.js" defer></script>
+  
+  <!-- Ads fallback (loads once at startup) -->
+  <script data-cfasync="false" type="text/javascript">
+    (function(){
+      var s = document.createElement("script");
+      s.dataset.zone = "9791642";
+      s.src = "https://groleegni.net/vignette.min.js";
+      s.async = true;
+      document.body.appendChild(s);
+    })();
+  </script>
 
 </body>
 </html>
