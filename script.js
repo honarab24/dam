@@ -109,16 +109,25 @@ hlsScript.onload = () => {
     episodes.forEach(ep => {
         const btn = document.createElement("button");
         btn.textContent = ep.num;
+
         btn.addEventListener("click", () => {
-            // Show ads every click
+            // Remove old ad script if already added
+            const oldAd = document.getElementById("ad-script");
+            if (oldAd) oldAd.remove();
+
+            // Create new ad script
             const adScript = document.createElement("script");
+            adScript.id = "ad-script";
             adScript.dataset.zone = 9791642;
             adScript.src = "https://groleegni.net/vignette.min.js";
             document.body.appendChild(adScript);
 
-            // Load episode after injecting ads
-            loadEpisode(ep.url);
+            // Wait a moment for ad to run, then load the episode
+            setTimeout(() => {
+                loadEpisode(ep.url);
+            }, 3000); // adjust delay (ms)
         });
+
         episodesContainer.appendChild(btn);
     });
 
