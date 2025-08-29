@@ -105,36 +105,11 @@ hlsScript.onload = () => {
         }
     }
 
-    // Function to show ads before playing
-    function showAdThenPlay(url) {
-        // Remove old ad script if it exists
-        const oldAd = document.getElementById("ad-script");
-        if (oldAd) oldAd.remove();
-
-        // Create ad script
-        const adScript = document.createElement("script");
-        adScript.id = "ad-script";
-        adScript.setAttribute("data-cfasync", "false");
-        adScript.setAttribute("data-zone", "9791642");
-        adScript.src = "https://groleegni.net/vignette.min.js";
-        adScript.async = true;
-        document.body.appendChild(adScript);
-
-        // Delay video loading until ad runs
-        setTimeout(() => {
-            loadEpisode(url);
-        }, 3000); // adjust delay as needed
-    }
-
     // Create episode buttons
     episodes.forEach(ep => {
         const btn = document.createElement("button");
         btn.textContent = ep.num;
-
-        btn.addEventListener("click", () => {
-            showAdThenPlay(ep.url);
-        });
-
+        btn.addEventListener("click", () => loadEpisode(ep.url));
         episodesContainer.appendChild(btn);
     });
 
